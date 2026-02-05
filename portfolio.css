@@ -1,0 +1,41 @@
+/* Name with Background */
+
+.hero {
+  height: 100vh;
+  background: url("assets/laptop.jpg") no-repeat center center/cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+section {
+  padding: 80px 0;
+}
+
+.badge:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  transition: 0.3s;
+}
+
+.navbar-brand {
+  font-size: 22px;
+}
